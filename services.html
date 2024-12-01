@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Kumar Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/adc27e9ac7.js" crossorigin="anonymous"></script>
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #ff9a9e);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+header nav ul {
+    display: inline-flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9a9e;
+}
+
+/* Services Section */
+#services {
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #ff9a9e);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+.service-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    font-size: 16px;
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card a:hover {
+    color: #6a11cb;
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(45deg, #2575fc, #6a11cb, #ff9a9e);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer .footer-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .icon {
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #ff9a9e);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s;
+    animation: colorShift 3s infinite;
+}
+
+footer .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframe Animation for Color Shifting */
+@keyframes colorShift {
+    0% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc, #ff9a9e);
+    }
+    50% {
+        background: linear-gradient(45deg, #ff9a9e, #6a11cb, #2575fc);
+    }
+    100% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc, #ff9a9e);
+    }
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f0f0f0;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <img src="your-logo.png" alt="Sandeep Kumar Logo"> -->
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h2 class="subtitle">My Services</h2>
+            <div class="services-list">
+                <div class="service-card">
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design and Development</h2>
+                    <p>Creating comprehensive creative web pages that meet customer needs at fair value.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating attractive and creative user interfaces with great user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Django Development</h2>
+                    <p>Building dynamic, scalable websites using Django and Python.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Developing feature-rich mobile applications for iOS and Android platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <h2>Connect with Me</h2>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 Sandeep Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="myscripts.js"></script>
+</body>
+</html>

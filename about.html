@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Kumar Portfolio</title>
+    <link rel="stylesheet" href="sty.css">
+    <script src="https://kit.fontawesome.com/adc27e9ac7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- Logo with Gradient Colors -->
+                <div class="logo-container">
+                    <div class="logo-gradient"></div>
+                    <img src="./DSC_1414.JPG" class="logo" alt="Logo">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-col1">
+                    <img src="./sandy6.jpg" alt="Sandeep Kumar">
+                </div>
+                <div class="about-col2">
+                    <h2 class="subtitle">About Me</h2>
+                    <p>
+                        A well-presented, confident, and hardworking individual with a positive attitude. 
+                        My goal is to take a challenging role in the software industry and lead the organization 
+                        to achieve its targets and objectives while gaining valuable knowledge and experience.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development:</span> Frontend and Backend Development</li>
+                            <li><span>Flask:</span> Creating Web Applications</li>
+                            <li><span>Django:</span> Developing Amazing Websites Using Python</li>
+                            <li><span>Machine Learning:</span> Building Projects</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Work Experience:</span> 2022 to Present (University and Personal Projects)</li>
+                            <li><span>Volunteer Experience:</span> Active Member of the National Service Scheme Since 2022</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025:</span> NIST University, B.Tech - 7.51 CGPA</li>
+                            <li><span>2019-2021:</span> Swarna Bharathi Junior College, Ichchapuram - 88.9%</li>
+                            <li><span>2018-2019:</span> Govt High School - 92.5%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <h2>Connect with Me</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="icon facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="myscripts.js"></script>
+</body>
+
+</html>

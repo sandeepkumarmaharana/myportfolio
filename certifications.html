@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="https://kit.fontawesome.com/adc27e9ac7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> -->
+            </ul>
+            <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+        </div>
+    </nav>
+
+    <!-- Certifications Section -->
+    <div class="certificates-section">
+        <h2 class="section-title">My Certifications</h2>
+        <div class="certificate-grid">
+            <!-- Certificates -->
+            <div class="certificate">
+                <img src="./s2.jpg" alt="Certificate 1" onclick="openModal(this)">
+                <p>Internship certificate</p>
+            </div>
+            <div class="certificate">
+                <img src="./s3.jpg" alt="Certificate 2" onclick="openModal(this)">
+                <p>gdsc certificate</p>
+            </div>
+            <div class="certificate">
+                <img src="./s4.jpg" alt="Certificate 3" onclick="openModal(this)">
+                <p>Offer letter</p>
+            </div>
+            <div class="certificate">
+                <img src="./s5.jpg" alt="Certificate 4" onclick="openModal(this)">
+                <p>trainning certificate</p>
+            </div>
+            <div class="certificate">
+                <img src="./s6.jpg" alt="Certificate 5" onclick="openModal(this)">
+                <p>Internship certificate</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Modal for Full-Screen Image -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h2>Connect with Me</h2>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 Sandeep Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to Open Modal
+        function openModal(image) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modal-image');
+            modal.style.display = 'block';
+            modalImage.src = image.src;
+        }
+
+        // Function to Close Modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
